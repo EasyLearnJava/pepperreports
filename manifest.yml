@@ -1,0 +1,12 @@
+---
+applications:
+- name: PepperReports
+  host: pepperreports
+  instances: 2
+  memory: 1G
+  timeout: 180
+  path: target/pepperreports-1.0.0-SNAPSHOT.jar
+  services: 
+  - SPAACEDB
+  env: 
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
