@@ -16,7 +16,7 @@ public class Person {
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	@Setter(AccessLevel.PROTECTED)
-	private Integer personId;
+	private Long personId;
 	
 	private String loginId;
 	private String password;
